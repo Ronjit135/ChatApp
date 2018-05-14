@@ -1,0 +1,92 @@
+body {
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 0 20px;
+	background-color: lightgreen;
+}
+
+.fullContainer {
+	width: 100vw;
+	position: relative;
+	margin-left: -50vw;
+	left: 50%;
+}
+
+.container {
+	border: 2px solid #dedede;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 1px 0;
+}
+
+.darker {
+	border-color: #ccc;
+	background-color: #ddd;
+}
+
+.container::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.container img {
+	float: left;
+	max-width: 60px;
+	width: 100%;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+.container img.right {
+	float: right;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+.time-right {
+	float: right;
+	color: #aaa;
+}
+
+.time-left {
+	float: left;
+	color: #999;
+}
+
+.wrapword {
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -webkit-pre-wrap; /*Chrome & Safari */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	white-space: pre-wrap; /* css-3 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	word-break: break-all;
+	white-space: normal;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+#chat,#users {
+	overflow: auto;
+	height: 50vh;
+}
+
+#blankDiv {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50vh;
+}
+
+#users,#chat,#messageBox {
+	border: 2px solid #dedede;
+	border-radius: 5px;
+	background-color: lightblue;
+}
